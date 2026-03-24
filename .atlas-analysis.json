@@ -1,0 +1,130 @@
+{
+  "projectType": "sdk-library",
+  "projectName": "CE C/C++ Toolchain",
+  "projectDescription": "A complete C/C++ development toolchain and library suite for writing native programs on the TI-84 Plus CE calculator series.",
+  "theme": "aspen",
+  "primaryColor": "#416e79",
+  "lightColor": "#a8bec2",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Getting Started",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": [
+              "introduction",
+              "getting-started/installation",
+              "getting-started/first-program",
+              "getting-started/project-structure"
+            ]
+          },
+          {
+            "group": "Development Setup",
+            "pages": [
+              "setup/ides",
+              "setup/makefile-options",
+              "setup/debugging"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "CE Libraries",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "libraries/overview"
+            ]
+          },
+          {
+            "group": "Core Libraries",
+            "pages": [
+              "libraries/graphx",
+              "libraries/fontlibc",
+              "libraries/fileioc",
+              "libraries/keypadc",
+              "libraries/lcddrvce",
+              "libraries/libload"
+            ]
+          },
+          {
+            "group": "USB & Storage Libraries",
+            "pages": [
+              "libraries/usbdrvce",
+              "libraries/srldrvce",
+              "libraries/msddrvce",
+              "libraries/fatdrvce"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Programming",
+            "pages": [
+              "guides/assembly",
+              "guides/fileio",
+              "guides/printf",
+              "guides/coding-guidelines"
+            ]
+          },
+          {
+            "group": "Hardware & Tools",
+            "pages": [
+              "guides/hardware",
+              "guides/debugging"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Contributing",
+        "groups": [
+          {
+            "group": "Contributing",
+            "pages": [
+              "contributing/overview",
+              "contributing/git",
+              "contributing/changelog"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/faq"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "LLVM/Clang v17-based C/C++ compiler targeting the eZ80 processor",
+    "Rich library ecosystem: graphx, fontlibc, fileioc, keypadc, usbdrvce, and more",
+    "Makefile-based build system with compression, archiving, and LTO support",
+    "Dynamic library linking at runtime via LibLoad to minimize program size",
+    "Debugging support with dbg_printf and CEmu emulator integration",
+    "Cross-platform support for Windows, Linux, and macOS",
+    "Image and sprite conversion via the bundled convimg tool",
+    "Assembly (GAS syntax) and C/C++ interoperability"
+  ],
+  "publicApiSurface": [
+    "graphx.h — 2D graphics: sprites, shapes, tilemaps, palettes",
+    "fontlibc.h — Font rendering",
+    "fileioc.h — File I/O backed by calculator AppVars",
+    "keypadc.h — Keypad input",
+    "lcddrvce.h — Low-level LCD driver",
+    "usbdrvce.h — USB device/host driver",
+    "srldrvce.h — Serial driver",
+    "msddrvce.h — Mass storage driver",
+    "fatdrvce.h — FAT filesystem driver",
+    "libload.h — Dynamic library loader",
+    "debug.h — Debugging utilities (dbg_printf)",
+    "Makefile variables: NAME, ICON, DESCRIPTION, COMPRESSED, ARCHIVED, CFLAGS, CXXFLAGS, LTO"
+  ]
+}
